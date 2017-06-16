@@ -17,6 +17,10 @@ public class Examination {
 
     private Date endTime;
 
+    private Date limitStartTime;
+
+    private Date limitEndTime;
+
     private Date logicStartTime;
 
     private Date logicEndTime;
@@ -89,6 +93,22 @@ public class Examination {
 
     public void setEndTime(Date endTime) {
         this.endTime = endTime;
+    }
+
+    public Date getLimitStartTime() {
+        return limitStartTime;
+    }
+
+    public void setLimitStartTime(Date limitStartTime) {
+        this.limitStartTime = limitStartTime;
+    }
+
+    public Date getLimitEndTime() {
+        return limitEndTime;
+    }
+
+    public void setLimitEndTime(Date limitEndTime) {
+        this.limitEndTime = limitEndTime;
     }
 
     public Date getLogicStartTime() {
