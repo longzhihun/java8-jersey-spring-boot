@@ -7,7 +7,7 @@ import com.thoughtworks.gaia.examination.entity.Examination;
  */
 public class AnswerProgressService {
 
-    public Examination getAnswerProgress(Long examinationId) {
+    /*public Examination getAnswerProgress(Long examinationId) {
         ExaminationModel productModel = examinationRepository.findOne(examinationId);
         if (productModel == null) {
             error("Examination not found with id: " + examinationId);
@@ -15,5 +15,5 @@ public class AnswerProgressService {
         }
 
         return mapper.map(productModel, Product.class);
-    }
+    }*/
 }

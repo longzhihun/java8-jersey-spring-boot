@@ -1,0 +1,1 @@
+alter table T_EXAMINATION add EXAM_TEMPLATE_ID bigint;

@@ -36,6 +36,18 @@ public class ExaminationEndPoint {
     @POST
     public Response createExamination(Examination examination) {
         Examination newExamination = examinationService.create(examination);
-        return Response.created(uriInfo.getRequestUriBuilder().build("/" + newExamination.getId())).entity(newExamination).build();
+        return Response.created(uriInfo.getRequestUriBuilder().build("/" + newExamination.getId())).entity(newExamination.getId()).build();
+    }
+
+    @Path("/{examination_id}")
+    @ApiOperation(value = "Get examination by id", response = Examination.class)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Get examination successfully"),
+            @ApiResponse(code = 404, message = "No examination matches given id")
+    })
+    @GET
+    public Response getExamination(@PathParam("examination_id") Long examinationId) {
+        Examination e = examinationService.getExamination(examinationId);
+        return Response.ok().entity(e).build();
     }
 }

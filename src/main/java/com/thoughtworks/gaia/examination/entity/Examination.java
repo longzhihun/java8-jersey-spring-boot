@@ -25,8 +25,6 @@ public class Examination {
 
     private Date logicEndTime;
 
-    private Long logicLimitTime;
-
     private Date codingStartTime;
 
     private Date codingEndTime;
@@ -38,14 +36,6 @@ public class Examination {
     private Integer currentLogicNum;
 
     private Integer currentCodingNum;
-
-    public Long getLogicLimitTime() {
-        return logicLimitTime;
-    }
-
-    public void setLogicLimitTime(Long logicLimitTime) {
-        this.logicLimitTime = logicLimitTime;
-    }
 
     public Integer getLogicNum() {
         return logicNum;
