@@ -11,11 +11,8 @@ import java.util.Date;
  * Created by jlguo on 16/06/2017.
  */
 
-@Entity
-@Table(name = "T_EXAMINATION")
 public class ExaminationModel extends IdBaseModel {
 
-    @Column(name = "name", nullable = false, length = 64)
     private String studentId;
 
     private String examTemplateId;
