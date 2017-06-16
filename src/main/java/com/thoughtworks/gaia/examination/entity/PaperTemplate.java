@@ -14,8 +14,6 @@ public class PaperTemplate {
 
     private Long logicLimitTime;
 
-    private Long codingLimitTime;
-
     public Long getId() {
         return id;
     }
@@ -54,13 +52,5 @@ public class PaperTemplate {
 
     public void setLogicLimitTime(Long logicLimitTime) {
         this.logicLimitTime = logicLimitTime;
-    }
-
-    public Long getCodingLimitTime() {
-        return codingLimitTime;
-    }
-
-    public void setCodingLimitTime(Long codingLimitTime) {
-        this.codingLimitTime = codingLimitTime;
     }
 }
