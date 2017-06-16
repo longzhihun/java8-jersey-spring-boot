@@ -4,20 +4,19 @@ import com.thoughtworks.gaia.examination.entity.AnswerProgress;
 import com.thoughtworks.gaia.examination.model.ExaminationModel;
 import com.thoughtworks.gaia.examination.repository.ExaminationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by devxu on 2017/6/16.
  */
+@Service
 public class AnswerProgressService {
-
-    @Autowired
-    private ExaminationRepository examinationRepository;
 
     public AnswerProgress getAnswerProgress(Long examinationId) {
 
         AnswerProgress progress = new AnswerProgress();
         progress.setLogicNum(10);
-        progress.setCodingDoneNum(6);
+        progress.setLogicDoneNum(6);
         progress.setCurrentLogicNum(7);
         progress.setCodingNum(5);
         progress.setCodingDoneNum(3);
