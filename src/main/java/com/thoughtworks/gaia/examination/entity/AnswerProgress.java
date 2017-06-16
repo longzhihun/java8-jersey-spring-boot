@@ -9,13 +9,13 @@ public class AnswerProgress {
 
     private Integer logicDoneNum;
 
-    private Integer currentLogic;
+    private Integer currentLogicNum;
 
     private Integer codingNum;
 
     private Integer codingDoneNum;
 
-    private Integer currentCoding;
+    private Integer currentCodingNum;
 
     public Integer getLogicNum() {
         return logicNum;
@@ -33,12 +33,12 @@ public class AnswerProgress {
         this.logicDoneNum = logicDoneNum;
     }
 
-    public Integer getCurrentLogic() {
-        return currentLogic;
+    public Integer getCurrentLogicNum() {
+        return currentLogicNum;
     }
 
-    public void setCurrentLogic(Integer currentLogic) {
-        this.currentLogic = currentLogic;
+    public void setCurrentLogicNum(Integer currentLogicNum) {
+        this.currentLogicNum = currentLogicNum;
     }
 
     public Integer getCodingNum() {
@@ -57,11 +57,11 @@ public class AnswerProgress {
         this.codingDoneNum = codingDoneNum;
     }
 
-    public Integer getCurrentCoding() {
-        return currentCoding;
+    public Integer getCurrentCodingNum() {
+        return currentCodingNum;
     }
 
-    public void setCurrentCoding(Integer currentCoding) {
-        this.currentCoding = currentCoding;
+    public void setCurrentCodingNum(Integer currentCodingNum) {
+        this.currentCodingNum = currentCodingNum;
     }
 }
