@@ -4,11 +4,11 @@ package com.thoughtworks.gaia.examination.entity;
  * Created by jlguo on 16/06/2017.
  */
 public class PaperTemplate {
-    private String id;
+    private Long id;
 
     private String name;
 
-    private String logicBankId;
+    private Long logicBankId;
 
     private Integer logicNum;
 
@@ -16,12 +16,20 @@ public class PaperTemplate {
 
     private Long codingLimitTime;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getLogicBankId() {
+        return logicBankId;
+    }
+
+    public void setLogicBankId(Long logicBankId) {
+        this.logicBankId = logicBankId;
     }
 
     public String getName() {
@@ -30,14 +38,6 @@ public class PaperTemplate {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getLogicBankId() {
-        return logicBankId;
-    }
-
-    public void setLogicBankId(String logicBankId) {
-        this.logicBankId = logicBankId;
     }
 
     public Integer getLogicNum() {

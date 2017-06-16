@@ -4,35 +4,35 @@ package com.thoughtworks.gaia.examination.entity;
  * Created by jlguo on 16/06/2017.
  */
 public class CodingQuestion {
-    private String id;
+    private Long id;
 
-    private String paperTemplateId;
+    private Long paperTemplateId;
 
-    private String codingBankId;
+    private Long codingBankId;
 
     private Integer limitTime;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getPaperTemplateId() {
+    public Long getPaperTemplateId() {
         return paperTemplateId;
     }
 
-    public void setPaperTemplateId(String paperTemplateId) {
+    public void setPaperTemplateId(Long paperTemplateId) {
         this.paperTemplateId = paperTemplateId;
     }
 
-    public String getCodingBankId() {
+    public Long getCodingBankId() {
         return codingBankId;
     }
 
-    public void setCodingBankId(String codingBankId) {
+    public void setCodingBankId(Long codingBankId) {
         this.codingBankId = codingBankId;
     }
 

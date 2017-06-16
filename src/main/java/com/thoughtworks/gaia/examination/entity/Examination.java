@@ -7,11 +7,11 @@ import java.util.Date;
  */
 public class Examination {
 
-    private String id;
+    private Long id;
 
-    private String studentId;
+    private Long studentId;
 
-    private String examTemplateId;
+    private Long examTemplateId;
 
     private Date startTime;
 
@@ -36,6 +36,36 @@ public class Examination {
     private Integer currentLogicNum;
 
     private Integer currentCodingNum;
+
+    private Long limitTime;
+
+    private Long logicLimitTime;
+
+    private Long codingLimitTime;
+
+    public Long getLimitTime() {
+        return limitTime;
+    }
+
+    public void setLimitTime(Long limitTime) {
+        this.limitTime = limitTime;
+    }
+
+    public Long getLogicLimitTime() {
+        return logicLimitTime;
+    }
+
+    public void setLogicLimitTime(Long logicLimitTime) {
+        this.logicLimitTime = logicLimitTime;
+    }
+
+    public Long getCodingLimitTime() {
+        return codingLimitTime;
+    }
+
+    public void setCodingLimitTime(Long codingLimitTime) {
+        this.codingLimitTime = codingLimitTime;
+    }
 
     public Integer getLogicNum() {
         return logicNum;
@@ -67,30 +97,6 @@ public class Examination {
 
     public void setCurrentCodingNum(Integer currentCodingNum) {
         this.currentCodingNum = currentCodingNum;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getExamTemplateId() {
-        return examTemplateId;
-    }
-
-    public void setExamTemplateId(String examTemplateId) {
-        this.examTemplateId = examTemplateId;
     }
 
     public Date getStartTime() {
@@ -155,5 +161,29 @@ public class Examination {
 
     public void setCodingEndTime(Date codingEndTime) {
         this.codingEndTime = codingEndTime;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(Long studentId) {
+        this.studentId = studentId;
+    }
+
+    public Long getExamTemplateId() {
+        return examTemplateId;
+    }
+
+    public void setExamTemplateId(Long examTemplateId) {
+        this.examTemplateId = examTemplateId;
     }
 }

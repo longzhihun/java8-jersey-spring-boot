@@ -5,7 +5,7 @@ package com.thoughtworks.gaia.examination.entity;
  */
 public class ExamPaper {
 
-    private String id;
+    private Long id;
 
     private String type; //logic or coding.
 
@@ -19,11 +19,11 @@ public class ExamPaper {
 
     private Integer limitTime;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

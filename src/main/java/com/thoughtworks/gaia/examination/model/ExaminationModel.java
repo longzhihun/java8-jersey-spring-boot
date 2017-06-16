@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "T_EXAMINATION")
-public class ExamnitionModel extends IdBaseModel {
+public class ExaminationModel extends IdBaseModel {
 
     @Column(name = "name", nullable = false, length = 64)
     private String studentId;
